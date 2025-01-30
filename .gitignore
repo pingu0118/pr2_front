@@ -3,7 +3,18 @@ node_modules/
 
 # ✅ Next.js 빌드 결과물 (필수)
 .next/
+.next/cache/
 out/
+
+# ✅ TypeScript 빌드 관련 (추가)
+dist/
+*.tsbuildinfo
+
+# ✅ Tailwind CSS 빌드 파일
+tailwind.css
+
+# ✅ ESLint & Prettier 캐시 파일
+.eslintcache
 
 # ✅ 환경 변수 파일 (중요, API 키 보호)
 .env
@@ -11,6 +22,12 @@ out/
 .env.development
 .env.production
 .env.test
+
+# ✅ npm/yarn/pnpm 관련 캐시 (추가)
+.npm/
+.yarn/
+.pnp/
+.pnp.cjs
 
 # ✅ 로그 파일 및 디버깅 관련
 npm-debug.log*
@@ -23,8 +40,12 @@ Thumbs.db
 .idea/
 .vscode/
 
+# ✅ 시스템 파일 (MacOS, Windows, Linux)
+Desktop.ini
+*.swp
+
 # ✅ 테스트 관련 파일 (필요하면 추가)
 coverage/
 
-# ✅ 기타
+# ✅ 기타 로그 파일
 *.log
