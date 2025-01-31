@@ -16,11 +16,21 @@ export default function Home() {
           </p>
         </div>
 
-        {/* 오른쪽 이미지 */}
+        {/* 오른쪽 이미지
         <div className="flex justify-center">
           <Image
             src="/developer.jpg" // public 폴더 안에 developer.jpg 이미지 추가 필요
             alt="개발자 이미지"
+            width={600}
+            height={400}
+            className="rounded-lg shadow-lg"
+          />
+        </div> */}
+
+        <div className="flex justify-center">
+          <Image
+            src="https://i.postimg.cc/6pw120hB/main-image-1jpg.jpg" //  PostImage Direct Link 사용
+            alt="PostImage 예제 이미지"
             width={600}
             height={400}
             className="rounded-lg shadow-lg"
